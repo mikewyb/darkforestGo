@@ -277,7 +277,7 @@ function framework.run_rl(agent, callbacks, opt)
         local test_aver_loss, test_err_str = compute_aver_loss(test_state)
         -- local test_aver_loss = { q = { 0.1 } }
         -- local test_err_str = "0.1"
-        --local train_aver_loss, train_err_str = compute_aver_loss(state)
+        local train_aver_loss, train_err_str = compute_aver_loss(state)
 
         state.saved_filename = nil
 
