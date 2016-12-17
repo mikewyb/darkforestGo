@@ -123,7 +123,8 @@ RLEngine.train = argcheck{
             state.agent:update_sampling_model()
 
             state.epoch = state.epoch + 1
-            self.hooks("onEndEpoch", state)
+            -- print(state.errs:size())
+	    self.hooks("onEndEpoch", state)
          end
          self.hooks("onEnd", state)
          return state
